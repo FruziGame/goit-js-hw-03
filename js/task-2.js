@@ -1,11 +1,26 @@
 
 console.log("task-2")
 
-function getShippingMessage(country, price, deliveryFee) {
-    const totalPrice = price + deliveryFee;
-    return`Shipping to ${country} will cost ${totalPrice} credits`
-}
 
-console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
-console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
-console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
+ const i = []
+
+function makeArray(firstArray, secondArray, maxLength) {
+
+ for (const element of firstArray ) {
+    i.push(element)
+ }
+
+ for (const element of secondArray ) {
+    i.push(element)
+ }
+
+ if (i.length > maxLength) {
+
+    return i.slice(0,maxLength)
+
+ } else {
+
+    return i
+
+ }
+}
