@@ -1,16 +1,16 @@
 
 console.log("task-3")
 
-const i = [];
 
 function filterArray(numbers, value) {
 
+  const newArray = [];
   for (const number of numbers) {
     if (number > value) {
-        i.push(number)
+      newArray.push(number)
     }
   }
-  return i;
+  return newArray;
   
 }
 
